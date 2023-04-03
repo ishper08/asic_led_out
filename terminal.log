@@ -1,0 +1,337 @@
+    1  sudo apt update
+    2  sudo apt upgrade
+    3  ls
+    4  pwd
+    5  cd..
+    6  ls
+    7  cd ..
+    8  ls
+    9  pwd
+   10  ls
+   11  cd ..
+   12  ls
+   13  cd ll
+   14  cd~
+   15  cd
+   16  ls
+   17  pwd
+   18  cd ../../
+   19  ls
+   20  mkdir -p caravel_tutorial
+   21  cd caravel_tutorial/
+   22  git clone https://github.com/ishper08/caravel_walkthrough
+   23  ls
+   24  cd caravel_walkthrough/
+   25  ls
+   26  mkdir dependencies
+   27  export OPENLANE_ROOT=$(pwd)/dependencies/openlane_src
+   28  PDK_ROOT=$(pwd)/dependencies/pdks
+   29  export PDK=sky130A
+   30  export PDK=gf180mcuC
+   31  vi Makefile 
+   32  make setup
+   33  pip install make
+   34  sudo apt-get install build-essential
+   35  make setup
+   36  export PDK_ROOT=$(pwd)/dependencies/pdks
+   37  echo $PDK_ROOT 
+   38  make setup
+   39  vi Makefile 
+   40  make uninstall
+   41  make setup
+   42  ls
+   43  cd caravel_tutorial/
+   44  ls
+   45  cd caravel_walkthrough/
+   46  ls
+   47  make setup
+   48  export OPENLANE_ROOT=$(pwd)/dependencies/openlane_src # you need to export this whenever you start a new shell
+   49  export PDK_ROOT=$(pwd)/dependencies/pdks # you need to export this whenever you start a new shell
+   50  # export the PDK variant depending on your shuttle, if you don't know leave it to the default
+   51  # for sky130 MPW shuttles....
+   52  export PDK=sky130A
+   53  # for the gf180 GFMPW shuttles...
+   54  export PDK=gf180mcuC
+   55  make setup
+   56  sudo apt-get remove docker docker-engine docker.io containerd runc
+   57  lsb_release -a
+   58  ls C:\Users\ishan\Downloads
+   59  ls /c/
+   60  cd /c/Users
+   61  cd c/
+   62  ls
+   63  cd mnt/c
+   64  cd /mnt/c
+   65  cd ~
+   66  cd /mnt/c/Users/ishan/Downloads/docker/
+   67  ls
+   68  sudo dpkg -i ./containerd.io_1.6.18-1_amd64.deb ./docker-ce_23.0.1-1~ubuntu.22.04~jammy_amd64.deb ./docker-ce-cli_23.0.1-1~ubuntu.22.04~jammy_amd64.deb ./docker-buildx-plugin_0.10.2-1~ubuntu.22.04~jammy_amd64.deb ./docker-compose-plugin_2.16.0-1~ubuntu.22.04~jammy_amd64.deb 
+   69  curl -fsSL https://get.docker.com -o get-docker.sh
+   70  sudo apt-get update
+   71  ls
+   72  cd ~
+   73  ls
+   74  mkdir docker
+   75  sudo mkdir -m 0755 -p /etc/apt/keyrings
+   76  ls
+   77  cd docker/
+   78  ls
+   79  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   80    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   81  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   82    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/nullsudo apt-get update
+   83  sudo apt-get update
+   84  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+   85  ls /etc/apt/keyrings/
+   86  sudo mkdir -m 0755 -p /etc/apt/keyrings
+   87  ls /etc/apt/keyrings/
+   88  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   89  ls /etc/apt/keyrings/
+   90  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+   91  echo echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   92  ls /etc/apt/keyrings/
+   93  echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   94  sudo apt-get update
+   95  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   96  sudo docker run hello-world
+   97  sudo dockerd
+   98  cd ../caravel_tutorial/
+   99  ls
+  100  cd caravel_walkthrough/
+  101  make setup\
+  102  make setup
+  103  sudo make setup
+  104  echo $PDK_ROOT 
+  105  make setup
+  106  sudo service docker status
+  107  sudo service docker start
+  108  make setup
+  109  sudo ls -la /var/run/docker.sock
+  110  sudo chown [username]:docker /var/run/docker.sock
+  111  sudo chown ish:docker /var/run/docker.sock
+  112  sudo chown [username]:docker /var/run/docker.sock
+  113  sudo chown ish:docker /var/run/docker.sock
+  114  sudo ls -la /var/run/docker.sock
+  115  make setup
+  116  sudo service docker status
+  117  sudo service docker start
+  118  sudo service docker status
+  119  sudo service docker start
+  120  sudo service docker status
+  121  docker run -d -p 80:80 docker/getting-started
+  122  cd caravel_tutorial/caravel_walkthrough/
+  123  ls
+  124  history 
+  125  export OPENLANE_ROOT=$(pwd)/dependencies/openlane_src # you need to export this whenever you start a new shell
+  126  export PDK_ROOT=$(pwd)/dependencies/pdks # you need to export this whenever you start a new shell
+  127  echo $PDK_ROOT 
+  128  export PDK=sky130A
+  129  make setup
+  130  sudo apt install python3.10-venv
+  131  make setup
+  132  ls
+  133  ls -al
+  134  make my_module
+  135  make user_proj_example
+  136  ls -al verilog/rtl/
+  137  vi openlane/user_proj_example/runs/23_03_22_16_38/logs/routing/17-detailed.log
+  138  make user_project_wrapper
+  139  history 
+  140  export PDK=gf180mcuC
+  141  make user_project_wrapper
+  142  history 
+  143  export PDK=gf180mcuC
+  144  export OPENLANE_ROOT=$(pwd)/dependencies/openlane_src # you need to export this whenever you start a new shell
+  145  export PDK_ROOT=$(pwd)/dependencies/pdks # you need to export this whenever you start a new shell
+  146  make test
+  147  ls
+  148  cd ..
+  149  ls
+  150  cd ish/caravel_tutorial/
+  151  make test
+  152  ls
+  153  cd caravel_walkthrough/
+  154  make test
+  155  cd ..
+  156  make my_test
+  157  mkdir my_test
+  158  ls
+  159  cd my_test/
+  160  git clone https://github.com/efabless/openlane openlane_master
+  161  make test
+  162  ls
+  163  cd openlane_master/
+  164  make test
+  165  export PDK_ROOT=$(pwd)/dependencies/pdks 
+  166  make
+  167  make test
+  168  cd ..
+  169  rm -rf openlane_master/
+  170  git clone https://github.com/The-OpenROAD-Project/OpenLane.git openlane_master
+  171  cd openlane_master/
+  172  ls
+  173  cd ..
+  174  mv openlane_master OpenLane
+  175  cd OpenLane/
+  176  ls
+  177  make
+  178  cd my_test/OpenLane/
+  179  ls
+  180  which magic
+  181  mkdir work
+  182  cd work/
+  183  git clone https://github.com/efabless/raven-picorv32
+  184  ls
+  185  cp -r raven-picorv32/verilog/raven_uart ../my_test/OpenLane/designs/raven_uart
+  186  vi raven-picorv32/verilog/raven_uart/raven_uart_tb.v 
+  187  ls
+  188  cd work
+  189  ls
+  190  mkdir caravel
+  191  git clone https://github.com/ishper08/caravel_walkthrough
+  192  ls
+  193  mv -r caravel_walkthrough/ caravel/caravel_walkthrough/
+  194  mv caravel_walkthrough/ caravel/caravel_walkthrough/
+  195  cd caravel/
+  196  mkdir dependencies
+  197  rm -rf dependencies/
+  198  cd caravel_walkthrough/
+  199  mkdir dependencies
+  200  export OPENLANE_ROOT=$(pwd)/dependencies/openlane_src
+  201  PDK_ROOT=$(pwd)/dependencies/pdks
+  202  PDK=sky130A
+  203  make setup
+  204  export PDK_ROOT=$(pwd)/dependencies/pdks
+  205  export PDK=sky130A
+  206  make setup
+  207  ls
+  208  tree verilog
+  209  sudo apt install tree
+  210  tree verilog
+  211  make user_proj_example
+  212  vi openlane/user_proj_example/runs/23_04_03_11_01/logs/routing/17-detailed.log
+  213  tree verilog/
+  214  cp ../../7seg/segment7.v verilog/rtl/user_proj_example.v 
+  215  cp ../../7seg/segment7.v verilog/rtl/
+  216  make verify-segment7-rtl
+  217  ls verilog/dv/segment7/
+  218  which gtkwave
+  219  gitkwave verilog/dv/segment7/RTL-segment7.vcd 
+  220  make verify-segment7-rtl
+  221  git add verilog/rtl/segment7.v 
+  222  git add verilog/dv/segment7/Makefile 
+  223  git add verilog/dv/segment7/segment7.c 
+  224  git add verilog/dv/segment7/segment7_tb.v 
+  225  git add verilog/rtl/user_project_wrapper.v 
+  226  git status
+  227  git add verilog/includes/includes.rtl.caravel_user_project 
+  228  git commit -m 'added my seven seg display'
+  229  git config --global user.email "ishbdd@gmail.com"
+  230  git config --global user.name "ishper08"
+  231  git commit -m 'added my seven seg display'
+  232  git push
+  233  git remote
+  234  git checkout -b dev/seg7
+  235  git remote
+  236  git push
+  237  git push --set-upstream origin dev/seg7
+  238  git remote add origin git@github.com:ishper08/caravel_walkthrough
+  239  git remote add origin git@github.com:ishper08/caravel_mpw
+  240  git push --set-upstream origin dev/seg7
+  241  git config --global credential.helper
+  242  printf "host=github.com\nprotocol=https\nusername=ShreeramNew" | git credential-xxx get
+  243  git config --global --list --show-origin
+  244  git push --set-upstream origin dev/seg7
+  245  git config --global credential.helper store
+  246  git pull
+  247  git branch --set-upstream-to=origin/<branch> dev/seg7
+  248  git push
+  249  git push --set-upstream origin dev/seg7
+  250  git config --global --unset-all core.editor
+  251  git config --global --list --show-origin
+  252  git push --set-upstream origin dev/seg7
+  253  git config --global --list --show-origin
+  254  make verify-segment7-rtl
+  255  tree openlane/
+  256  cd openlane/
+  257  cp user_proj_example/base_user_proj_example.sdc segment7/base_segment7.sdc
+  258  mkdir segment7
+  259  cp user_proj_example/base_user_proj_example.sdc segment7/base_segment7.sdc
+  260  cp user_proj_example/config.json segment7/config.json
+  261  vi segment7/base_segment7.sdc 
+  262  vi segment7/config.json 
+  263  make segment7
+  264  make segment7 -tag first_run
+  265  make segment7
+  266  vi segment7/runs/23_04_03_13_34/logs/signoff/36-erc_screen.log
+  267  cvc_rv
+  268  pip install cvc_rv
+  269  pip install cvc
+  270  find cvc_rv
+  271  grep cvc_rv
+  272  which magic
+  273  make segment7
+  274  cd ..
+  275  ls
+  276  cd caravel_walkthrough/
+  277  ls
+  278  cd dependencies/openlane_src/
+  279  ls
+  280  echo OPENLANE_IMAGE_NAME
+  281  echo $OPENLANE_IMAGE_NAME
+  282  ls
+  283  cd docker
+  284  ls
+  285  vi Makefile 
+  286  make build-openroad_app
+  287  make yosys
+  288  make cvc
+  289  make cvc_rv
+  290  ls
+  291  mv cvc_rv cvc_old
+  292* 
+  293  mv cvc_old/ cvc_rv
+  294  make cvc_rv
+  295  ls -al cvc_rv/
+  296  vi cvc_rv/Dockerfile
+  297  cd ..
+  298  cd cd ..
+  299  cd ..
+  300  ls
+  301  make build-yosys
+  302  history
+  303  cd ..
+  304  ls
+  305  make build-yosys
+  306  cd dependencies/openlane_src/
+  307  ls
+  308  make build-yosys
+  309  cd dependencies/
+  310  ls
+  311  cd ..
+  312  ls
+  313  cd docker/
+  314  ls
+  315  make build-yosys
+  316  pip install click
+  317  make build-yosys
+  318  make build-cvc_rv
+  319  which cvc_rv
+  320  cd ..
+  321  ls
+  322  history 
+  323  make segment7
+  324  find openlane/segment7/runs/segment7/ -name '*gds'
+  325  klayout openlane/segment7/runs/segment7/results/final/gds/segment7.gds
+  326  cd openlane/user_project_wrapper/
+  327  ls
+  328  vi config.json 
+  329  cd ..
+  330  tree openlane
+  331  cd ..
+  332  cd caravel_walkthrough/
+  333  make user_project_wrapper 
+  334  vi openlane/user_project_wrapper/runs/23_04_03_14_51/reports/signoff/21-rcx_sta.slew.rpt 
+  335  make precheck
+  336  make run-precheck
+  337  history > terminal.log
